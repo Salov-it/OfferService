@@ -5,9 +5,9 @@ VisualStudioVersion = 17.5.33414.496
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{A694783F-2240-4FD5-AA22-E453779A8600}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OfferService.Application", "WalletTransaction.Application\OfferService.Application.csproj", "{97533C2B-497A-438A-8F35-736AC9D17CA0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OfferService.Application", "OfferService.Application/OfferService.Application.csproj", "{97533C2B-497A-438A-8F35-736AC9D17CA0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OfferService.Domain", "WalletTransaction.Domain\OfferService.Domain.csproj", "{AD435C9C-B5AF-459E-BE9C-7A0903176990}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OfferService.Domain", "OfferService.Domain\OfferService.Domain.csproj", "{AD435C9C-B5AF-459E-BE9C-7A0903176990}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{99F3FBA3-3E91-4398-8B2E-B8AF2D3FC564}"
 EndProject
@@ -15,9 +15,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentatio
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{94BBC750-64C7-4109-89B5-B54B5EB0FF26}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OfferService.persistance", "WalletTransaction.persistance\OfferService.persistance.csproj", "{7E67B26E-DBF4-4322-84D6-685029711AA6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OfferService.persistance", "OfferService.persistance\OfferService.persistance.csproj", "{7E67B26E-DBF4-4322-84D6-685029711AA6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OfferService.webApi", "WalletTransaction.webApi\OfferService.webApi.csproj", "{0B218B03-C089-4618-B12A-5507AA1DBAAD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OfferService.webApi", "OfferService.webApi\OfferService.webApi.csproj", "{0B218B03-C089-4618-B12A-5507AA1DBAAD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
