@@ -38,7 +38,7 @@ namespace OfferService.webApi.Controllers
         {
             var content = new GetByOwnerIdQuerry
             {
-                ownerId = ownerId
+                ownerId = 3
             };
             var answer = await mediator.Send(content);
             return Ok(answer);

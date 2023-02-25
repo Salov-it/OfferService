@@ -18,8 +18,6 @@ builder.Services.AddAutoMapper(config =>
 
 });
 
-
-
 builder.Services.AddApplication();
 builder.Services.AddPersistance(configuration);
 

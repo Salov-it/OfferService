@@ -39,10 +39,10 @@ namespace OfferService.persistance
                         });
                         break;
                     }
-               // default:
-                   // {
-                       // throw new Exception();
-                   // }
+                default:
+                    {
+                        throw new Exception();
+                    }
             }
 
             services.AddScoped<IOfferContext>(provider => provider.GetService<OfferContext>());

@@ -14,14 +14,14 @@
     <PackageReference Include="Microsoft.AspNetCore.Hosting" Version="2.2.7" />
     <PackageReference Include="Microsoft.Data.Sqlite.Core" Version="7.0.3" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.3" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="7.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="6.0.14" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\WalletTransaction.Application\OfferService.Application.csproj" />
-    <ProjectReference Include="..\WalletTransaction.Domain\OfferService.Domain.csproj" />
-    <ProjectReference Include="..\WalletTransaction.persistance\OfferService.persistance.csproj" />
+    <ProjectReference Include="..\OfferService.Application\OfferService.Application.csproj" />
+    <ProjectReference Include="..\OfferService.Domain\OfferService.Domain.csproj" />
+    <ProjectReference Include="..\OfferService.persistance\OfferService.persistance.csproj" />
   </ItemGroup>
 
 </Project>

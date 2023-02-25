@@ -5,7 +5,7 @@ namespace OfferService.persistance
 {
     public class OfferContext : DbContext, IOfferContext
     {
-        public DbSet<Offer> offers { get; set; }
+        public DbSet<Offer>offers { get; set; }
 
         public OfferContext(DbContextOptions<OfferContext> options) : base(options) { }
         protected override void OnModelCreating(ModelBuilder modelBuilder)

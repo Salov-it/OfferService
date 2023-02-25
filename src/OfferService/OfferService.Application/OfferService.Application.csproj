@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\WalletTransaction.Domain\OfferService.Domain.csproj" />
+    <ProjectReference Include="..\OfferService.Domain\OfferService.Domain.csproj" />
   </ItemGroup>
 
 </Project>

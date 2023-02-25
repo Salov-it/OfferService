@@ -4,7 +4,7 @@ using OfferService.Domain;
 
 namespace OfferService.persistance
 {
-    internal class Config : IEntityTypeConfiguration<Offer>
+    public class Config : IEntityTypeConfiguration<Offer>
     {
         public void Configure(EntityTypeBuilder<Offer> builder)
         {

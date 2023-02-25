@@ -8,15 +8,15 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.3" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="7.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="6.0.14" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.3" />
     <PackageReference Include="Npgsql" Version="6.0.9" />
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="6.0.8" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\WalletTransaction.Application\OfferService.Application.csproj" />
-    <ProjectReference Include="..\WalletTransaction.Domain\OfferService.Domain.csproj" />
+    <ProjectReference Include="..\OfferService.Application\OfferService.Application.csproj" />
+    <ProjectReference Include="..\OfferService.Domain\OfferService.Domain.csproj" />
   </ItemGroup>
 
 </Project>
