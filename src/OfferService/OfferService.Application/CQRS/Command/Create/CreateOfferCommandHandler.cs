@@ -17,12 +17,12 @@ namespace OfferService.Application.CQRS.Command.Create
         {
             var content = new Offer
             {
-                id = request.id,
                 ownerId = request.ownerId,
                 minCount = request.minCount,
                 count = request.count,
                 price = request.price,
-                createdAt = DateTime.UtcNow.ToString(),
+                createdAt = DateTime.Now.ToString(),
+                updatedAt = DateTime.Now.ToString(),
             };
 
             await _offerContext.offers.AddAsync(content);

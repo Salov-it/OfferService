@@ -7,7 +7,7 @@ namespace OfferService.Application.CQRS.Command.Create
         public CreateCommandValidator()
         {
             RuleFor(query => query.ownerId).GreaterThan(0);
-            RuleFor(query => query.id).GreaterThan(0);
+            RuleFor(query => query.ownerId).GreaterThan(0);
         }
     }
 }

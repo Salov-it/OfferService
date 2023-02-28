@@ -25,7 +25,7 @@ namespace OfferService.Application.CQRS.Command.UpdateOffer
             content.minCount = request.minCount;
             content.count = request.count;
             content.price = request.price;
-            content.updatedAt = DateTime.UtcNow.ToString();
+            content.updatedAt = DateTime.Now.ToString();
 
             await _context.SaveChangesAsync(cancellationToken);
             return content;

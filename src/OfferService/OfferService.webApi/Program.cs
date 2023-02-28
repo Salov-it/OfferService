@@ -6,6 +6,7 @@ using OfferService.Application;
 using OfferService.persistance;
 using Microsoft.AspNetCore.Authentication;
 using MediatR;
+using OfferService.Application.CQRS.Command.Create;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,8 +19,16 @@ builder.Services.AddAutoMapper(config =>
 
 });
 
-builder.Services.AddApplication();
-builder.Services.AddPersistance(configuration);
+//builder.Services.AddApplication();
+//builder.Services.AddPersistance(configuration);
+
+//Регистрация DbContexta и mediatr
+builder.Services.AddDbContext<OfferContext>();
+builder.Services.AddMediatR(Assembly.GetExecutingAssembly());
+builder.Services.AddScoped<IOfferContext>(provider => provider.GetService<OfferContext>());
+
+//Регистрация команды
+builder.Services.AddMediatR(typeof(CreateOfferСommand).GetTypeInfo().Assembly);
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

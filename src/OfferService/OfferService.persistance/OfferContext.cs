@@ -13,5 +13,10 @@ namespace OfferService.persistance
             modelBuilder.ApplyConfiguration(new Config());
             base.OnModelCreating(modelBuilder);
         }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlite("Data Source=OfferBasse.db");
+        }
     }
 }

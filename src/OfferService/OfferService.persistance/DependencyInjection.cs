@@ -8,45 +8,45 @@ namespace OfferService.persistance
 {
     public static class DependencyInjection
     {
-        public static IServiceCollection AddPersistance(this IServiceCollection services, IConfiguration config)
-        {
-            var connectionString = config["DbConnection"];
+        //public static IServiceCollection AddPersistance(this IServiceCollection services, IConfiguration config)
+        //{
+        //    var connectionString = config["DbConnection"];
 
-            IOfferContext _context;
-            switch (config["DbType"])
-            {
-                case "InMemory":
-                    {
-                        services.AddDbContext<OfferContext>(opt =>
-                        {
-                            opt.UseInMemoryDatabase("1");
-                        });
-                        break;
-                    }
-                case "Postgres":
-                    {
-                        services.AddDbContext<OfferContext>(options =>
-                        {
-                            options.UseNpgsql(connectionString);
-                        });
-                        break;
-                    }
-                case "SQLite":
-                    {
-                        services.AddDbContext<OfferContext>(options =>
-                        {
-                            options.UseSqlite(connectionString);
-                        });
-                        break;
-                    }
-                default:
-                    {
-                        throw new Exception();
-                    }
-            }
+        //    IOfferContext _context;
+        //    switch (config["DbType"])
+        //    {
+        //        case "InMemory":
+        //            {
+        //                services.AddDbContext<OfferContext>(opt =>
+        //                {
+        //                    opt.UseInMemoryDatabase("1");
+        //                });
+        //                break;
+        //            }
+        //        case "Postgres":
+        //            {
+        //                services.AddDbContext<OfferContext>(options =>
+        //                {
+        //                    options.UseNpgsql(connectionString);
+        //                });
+        //                break;
+        //            }
+        //        case "SQLite":
+        //            {
+        //                services.AddDbContext<OfferContext>(options =>
+        //                {
+        //                    options.UseSqlite(connectionString);
+        //                });
+        //                break;
+        //            }
+        //        default:
+        //            {
+        //                throw new Exception();
+        //            }
+        //    }
 
-            services.AddScoped<IOfferContext>(provider => provider.GetService<OfferContext>());
-            return services;
-        }
+        //    services.AddScoped<IOfferContext>(provider => provider.GetService<OfferContext>());
+        //    return services;
+        //}
     }
 }
